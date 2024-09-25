@@ -1,0 +1,60 @@
+Question 4
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+
+	char ftimeorptime;
+	cout << "Is it a full time or part time worker?(Select F for full time, Select P for part time)" << endl;
+	cin >> ftimeorptime;
+
+	if (ftimeorptime == 'F' || ftimeorptime == 'f') {
+
+		bool YofS;
+		cout << "Have you worked more than 7 years?( Select 1 for yes, Select 0 for no)" << endl;
+		cin >> YofS;
+
+		if (YofS == true) {
+
+			cout << "Percant raise = 7.00";
+
+		}
+
+		else {
+
+			cout << "Percent raise = 5.00";
+
+		}
+
+	}
+
+	else if (ftimeorptime == 'p' || ftimeorptime == 'P') {
+
+		bool YofS;
+		cout << "Have you worked more than 7 years?( Select 1 for yes, Select 0 for no)" << endl;
+		cin >> YofS;
+
+		if (YofS == true) {
+
+			cout << "Percent raise = 4.1";
+
+		}
+
+		else {
+
+			cout << "Percent raise = 3.5";
+
+		}
+
+	}
+
+	else {
+
+		cout << "INVALID";
+
+	}
+
+	return 0;
+}
+
